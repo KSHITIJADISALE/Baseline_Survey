@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sector M — Irrigation | DMF Baseline Survey MP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-banner">
+  Government of Madhya Pradesh — Mineral Resources Department
+  <span>|</span> District Mineral Foundation (DMF) — PMKKKY
+  <span>|</span> MP DMF Rules 2016 (as amended 14.05.2026)
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-emblem">⛏️</div>
+    <div class="header-titles">
+      <h1>DMF Comprehensive Baseline Survey</h1>
+      <p>Field Data Collection — Gap Identification for Fund Utilization</p>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="sector_m.html" class="active">Sector M</a>
+      <a href="index.html#sectors">All Sectors</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sector-progress">
+  <div class="sector-progress-inner">
+    <a href="sector_a.html" class="sector-pill pill-high">A — Drinking Water Supply</a>
+<a href="sector_b.html" class="sector-pill pill-high">B — Environment Preservation & Pollution Control Measures</a>
+<a href="sector_c.html" class="sector-pill pill-high">C — Health Care</a>
+<a href="sector_d.html" class="sector-pill pill-high">D — Education</a>
+<a href="sector_e.html" class="sector-pill pill-high">E — Welfare of Women & Children</a>
+<a href="sector_f.html" class="sector-pill pill-high">F — Welfare of Aged & Differently Abled</a>
+<a href="sector_g.html" class="sector-pill pill-high">G — Skill Development & Livelihood Generation</a>
+<a href="sector_h.html" class="sector-pill pill-high">H — Sanitation</a>
+<a href="sector_i.html" class="sector-pill pill-high">I — Housing</a>
+<a href="sector_j.html" class="sector-pill pill-high">J — Agriculture</a>
+<a href="sector_k.html" class="sector-pill pill-high">K — Animal Husbandry</a>
+<a href="sector_l.html" class="sector-pill pill-other">L — Physical Infrastructure</a>
+<a href="sector_m.html" class="sector-pill active pill-other">M — Irrigation</a>
+<a href="sector_n.html" class="sector-pill pill-other">N — Energy & Watershed Development</a>
+<a href="sector_o.html" class="sector-pill pill-other">O — Any other measures for enhancing environmental quality in mining affected district(s)</a>
+
+  </div>
+</div>
+
+
+<section class="sector-hero">
+  <div class="sector-hero-inner">
+<div class="sector-icon-box">
+  <img src="Asset/M.png" alt="Icon" style="width:48px; height:48px;">
+</div>
+    <div class="sector-meta">
+      <span class="sector-badge badge-other">OTHER PRIORITY — Max 30% Fund</span>
+      <h2>Sector M: Irrigation</h2>
+      <div class="rule-ref">Statutory Reference: Rule 13(1)B(b)</div>
+      <p class="scope"><strong>Scope:</strong> Developing alternate sources of irrigation, including check dams and diversion weirs, adoption of suitable and advanced irrigation techniques, assistance for micro irrigation facilities including drip irrigation, and assistance for bore wells and pump energization.</p>
+    </div>
+  </div>
+</section>
+
+<div class="main-content">
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-title">Sub-Sections</div>
+      <nav class="sidebar-nav">
+        <a href="#m_i">M-I: Irrigation Infrastructure Status</a>
+<a href="#m_ii">M-II: Precision Irrigation & Alternate Sources</a>
+<a href="#deficit_matrix">Infrastructure Deficit Matrix</a>
+
+      </nav>
+    </div>
+  </aside>
+
+  <main>
+    
+  <div class="form-section" id="m_i">
+    <div class="form-section-header">
+      <span class="section-code">M-I</span>
+      <h3>Irrigation Infrastructure Status</h3>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <div class="form-section-body">
+      <table class="question-table">
+        <thead>
+          <tr>
+            <th>Item No.</th>
+            <th>Survey Question</th>
+            <th>Data Format</th>
+            <th>Field Entry</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="q-num">M-I.1</td>
+          <td class="q-text">What is total farming area and irrigated area?</td>
+          <td class="q-format">NSA (ha); Irrigated (ha); Gap</td>
+          <td class="q-input"><input type="number" name="m_i_1_nsa" placeholder="Net sown area (ha)"> <input type="number" name="m_i_1_irrig" placeholder="Irrigated area (ha)" style="margin-top:4px"> <input type="number" name="m_i_1_gap" placeholder="Gap (ha)" style="margin-top:4px"></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-I.2</td>
+          <td class="q-text">What is the main irrigation source?</td>
+          <td class="q-format">Source type</td>
+          <td class="q-input"><select name="m_i_2"><option value="">-- Source Type --</option><option>Canal</option><option>Bore well/Tube well</option><option>Open well</option><option>Pond/Tank</option><option>River Lift Irrigation</option><option>Rainfall only</option></select></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-I.3</td>
+          <td class="q-text">How many check dams / stop dams or water structures are available?</td>
+          <td class="q-format">Count; Operational; Defunct</td>
+          <td class="q-input"><input type="number" name="m_i_3_total" placeholder="Total"> <input type="number" name="m_i_3_op" placeholder="Operational" style="margin-top:4px"> <input type="number" name="m_i_3_def" placeholder="Defunct" style="margin-top:4px"></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-I.4</td>
+          <td class="q-text">How many bore wells and pumps are available?</td>
+          <td class="q-format">Count; Energised; Non-energised</td>
+          <td class="q-input"><input type="number" name="m_i_4_total" placeholder="Total bore wells"> <input type="number" name="m_i_4_en" placeholder="Energised" style="margin-top:4px"> <input type="number" name="m_i_4_nen" placeholder="Non-energised" style="margin-top:4px"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="form-section" id="m_ii">
+    <div class="form-section-header">
+      <span class="section-code">M-II</span>
+      <h3>Precision Irrigation & Alternate Sources</h3>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <div class="form-section-body">
+      <table class="question-table">
+        <thead>
+          <tr>
+            <th>Item No.</th>
+            <th>Survey Question</th>
+            <th>Data Format</th>
+            <th>Field Entry</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="q-num">M-II.1</td>
+          <td class="q-text">How many farmers use drip, sprinkler, etc irrigation?</td>
+          <td class="q-format">Farmer count; % irrigated area</td>
+          <td class="q-input"><input type="number" name="m_ii_1_count" placeholder="Farmer count"> <input type="number" name="m_ii_1_pct" placeholder="% of irrigated area" style="margin-top:4px"></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-II.2</td>
+          <td class="q-text">Are solar pumps available (PM-KUSUM)?</td>
+          <td class="q-format">Yes/No; Units covered</td>
+          <td class="q-input"><div class="radio-group"><label><input type="radio" name="m_ii_2" value="Yes"> Yes</label><label><input type="radio" name="m_ii_2" value="No"> No</label></div><input type="number" name="m_ii_2_units" placeholder="Units covered" style="margin-top:6px"></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-II.3</td>
+          <td class="q-text">Is water enough for farming all year?</td>
+          <td class="q-format">Adequate/Inadequate; Deficit months</td>
+          <td class="q-input"><div class="radio-group"><label><input type="radio" name="m_ii_3" value="Adequate"> Adequate</label><label><input type="radio" name="m_ii_3" value="Inadequate"> Inadequate</label></div><input type="text" name="m_ii_3_deficit" placeholder="Deficit months..." style="margin-top:6px"></td>
+        </tr>
+        <tr>
+          <td class="q-num">M-II.4</td>
+          <td class="q-text">What is the most needed irrigation facility?</td>
+          <td class="q-format">Text; priority need</td>
+          <td class="q-input"><textarea name="m_ii_4" placeholder="Describe priority irrigation need..."></textarea></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<div id="dynamicSectionsA" class="dynamic-section-container"></div>
+
+<div style="text-align:right; margin:10px 0;">
+  <button type="button" class="btn btn-primary" onclick="addCustomSection(this, 'dynamicSectionsA')">
+    ➕ Add Custom Section
+  </button>
+</div>
+
+    <!-- Infrastructure Deficit Matrix -->
+    <div class="form-section" id="deficit_matrix">
+      <div class="form-section-header">
+        <span class="section-code">M</span>
+        <h3>Infrastructure Deficit Matrix — Sector M</h3>
+        <span class="toggle-icon">▼</span>
+      </div>
+      <div class="form-section-body">
+        <div class="note-box" style="margin:14px 20px 14px">
+          Enter actual availability, operational count, deficit/need, approximate cost (Rs. Lakh), and DMF funding status for each asset type identified in this sector.
+        </div>
+        <div class="deficit-matrix-wrap">
+          <table class="deficit-matrix">
+            <thead>
+              <tr>
+                <th>Sr.</th>
+                <th>Asset / Intervention Type</th>
+                <th>Actual Availability (Nos.)</th>
+                <th>Operational (Nos.)</th>
+                <th>Deficit / Need</th>
+                <th>Approx. Cost (Rs. Lakh)</th>
+                <th>DMF Funding Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+        <tr>
+          <td>M1</td>
+          <td>Check dams / stop dams (count)</td>
+          <td><input type="number" name="dm_m1_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m1_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m1_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m1_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m1_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>M2</td>
+          <td>Diversion weirs (count)</td>
+          <td><input type="number" name="dm_m2_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m2_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m2_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m2_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m2_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>M3</td>
+          <td>Irrigation bore wells (count)</td>
+          <td><input type="number" name="dm_m3_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m3_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m3_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m3_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m3_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>M4</td>
+          <td>Pump energisation — solar / electric (count)</td>
+          <td><input type="number" name="dm_m4_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m4_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m4_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m4_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m4_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>M5</td>
+          <td>Drip / micro irrigation (ha coverage)</td>
+          <td><input type="number" name="dm_m5_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m5_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m5_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m5_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m5_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>M6</td>
+          <td>Farm ponds (count)</td>
+          <td><input type="number" name="dm_m6_avail" placeholder="0"></td>
+          <td><input type="number" name="dm_m6_operational" placeholder="0"></td>
+          <td><input type="number" name="dm_m6_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_m6_cost" placeholder="0.00"></td>
+          <td>
+            <select class="funding-select" name="dm_m6_funding">
+              <option value="">-- Status --</option>
+              <option>Proposed</option>
+              <option>Sanctioned</option>
+              <option>Ongoing</option>
+              <option>Completed</option>
+              <option>Not Applied</option>
+              <option>Not Required</option>
+
+            </select>
+          </td>
+        </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note-box" style="margin-top:12px">
+          <strong>Note:</strong> District authorities may identify additional sector-wise points. Such works may be included under this baseline survey as undertaken by the District Mineral Foundation.
+        </div>
+      </div>
+    </div>
+
+    <div class="action-bar">
+      <a href="sector_l.html" class="btn btn-secondary">← Physical Infrastructure</a>
+      <button class="btn btn-secondary" onclick="exportSummary()">📄 Export Summary</button>
+      <button class="btn btn-amber" onclick="saveForm()">💾 Save Draft</button>
+      <button class="btn btn-primary" onclick="printForm()">🖨 Print</button>
+      <a href="sector_n.html" class="btn btn-primary">Energy & Watershed Development →</a>
+    </div>
+  </main>
+</div>
+
+<div class="save-toast"></div>
+
+<footer class="site-footer">
+  Directorate of Geology and Mining, Government of Madhya Pradesh, Bhopal — 462002|
+  DMF Baseline Survey — Rule 13(1)B(b)
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@
 <a href="sector_l.html" class="sector-pill pill-other">L — Physical Infrastructure</a>
 <a href="sector_m.html" class="sector-pill pill-other">M — Irrigation</a>
 <a href="sector_n.html" class="sector-pill pill-other">N — Energy & Watershed Development</a>
-<a href="sector_o.html" class="sector-pill pill-other">O — Any other measures for enhancing environmental quality in mining affected district(s)</a>
+<a href="sector_o.html" class="sector-pill pill-other">O — Any other measures for enhancing environmental quality in mining affected District(s)</a>
 
   </div>
 </div>
@@ -116,8 +116,11 @@
         <tr>
           <td class="q-num">A-I.2</td>
           <td class="q-text">How many households are connected to the piped water supply system?</td>
-          <td class="q-format">Count; Coverage %</td>
-          <td class="q-input"><input type="number" name="a_i_2_count" placeholder="Count"> <input type="number" name="a_i_2_pct" placeholder="Coverage %" style="margin-top:4px"></td>
+          <td class="q-format">Count</td>
+          <td class="q-input">
+	<input type="number" name="a_i_2_Total" placeholder="Total Housholds">
+	<input type="number" name="a_i_2_count" placeholder="Households having water supplies" style="margin-top:4px">
+	<input type="number" name="a_i_2_pct" placeholder="Coverage %" style="margin-top:4px" readonly></td>
         </tr>
         <tr>
           <td class="q-num">A-I.3</td>
@@ -210,7 +213,20 @@
           <td class="q-num">A-II.5</td>
           <td class="q-text">How many cases of water-borne diseases reported in the last 1–2 years?</td>
           <td class="q-format">Illness type; Number of cases</td>
-          <td class="q-input"><textarea name="a_ii_5" placeholder="e.g. Cholera: 12 cases, Typhoid: 5 cases..."></textarea></td>
+          <td class="q-input"><div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:6px;">
+<label>Cholera</label>
+<input type="text" name="a_ii_5" placeholder="Cholera Cases Count">
+<label>Typhoid</label>
+<input type="text" name="a_ii_5" placeholder="Typhoid Cases Count">
+<label>Maleria</label>
+<input type="text" name="a_ii_5" placeholder="Maleria Cases Count">
+<label>Dysentery</label>
+<input type="text" name="a_ii_5" placeholder="Dysentery Cases Count">
+<label>Polio</label>
+<input type="text" name="a_ii_5" placeholder="Polio Cases Count">
+<label>Others</label>
+<input type="text" name="a_ii_5" placeholder="Count of Others">
+</div></td>
         </tr>
         <tr>
           <td class="q-num">A-II.6</td>
@@ -259,11 +275,15 @@
         </tr>
         <tr>
           <td class="q-num">A-III.4</td>
-          <td class="q-text">What are the top 3 water needs of the community?</td>
-          <td class="q-format">Text; ranked list</td>
-          <td class="q-input"><textarea name="a_iii_4" placeholder="1. ...
-2. ...
-3. ..."></textarea></td>
+          <td class="q-text">What are the top water needs of the communities?</td>
+          <td class="q-format">Text</td>
+          <td class="q-input"><div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:6px;">
+              <input type="text" name="a_iii_top1" placeholder="1.">
+              <input type="text" name="a_iii_top2" placeholder="2.">
+              <input type="text" name="a_iii_top3" placeholder="3.">
+              <input type="text" name="a_iii_top4" placeholder="4.">
+              <input type="text" name="a_iii_top5" placeholder="5.">
+              <input type="text" name="a_iii_top_other" placeholder="Any Other"></td>
         </tr>
         <tr>
           <td class="q-num">A-III.5</td>
@@ -313,9 +333,9 @@
         <tr>
           <td>A1</td>
           <td>Piped household connections (FHTCs)</td>
-          <td><input type="number" name="dm_a1_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a1_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a1_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a1_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a1_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a1_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a1_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a1_funding">
@@ -332,9 +352,9 @@
         <tr>
           <td>A2</td>
           <td>Hand pumps</td>
-          <td><input type="number" name="dm_a2_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a2_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a2_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a2_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a2_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a2_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a2_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a2_funding">
@@ -352,9 +372,9 @@
         <tr>
           <td>A3</td>
           <td>Bore wells (non-hand pump)</td>
-          <td><input type="number" name="dm_a3_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a3_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a3_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a3_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a3_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a3_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a3_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a3_funding">
@@ -372,10 +392,10 @@
         <tr>
           <td>A4</td>
           <td>Overhead Storage Tanks / GLSRs</td>
-          <td><input type="number" name="dm_a4_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a4_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a4_deficit" placeholder="0"></td>
-          <td><input type="number" name="dm_a4_cost" placeholder="0.00"></td>
+          <td><input type="number" name="dm_a4_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a4_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a4_deficit" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a4_cost" placeholder="0.00" readonly></td>
           <td>
             <select class="funding-select" name="dm_a4_funding">
               <option value="">-- Status --</option>
@@ -392,9 +412,9 @@
         <tr>
           <td>A5</td>
           <td>Water Treatment Plants</td>
-          <td><input type="number" name="dm_a5_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a5_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a5_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a5_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a5_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a5_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a5_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a5_funding">
@@ -412,9 +432,9 @@
         <tr>
           <td>A6</td>
           <td>Iron Removal Plants</td>
-          <td><input type="number" name="dm_a6_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a6_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a6_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a6_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a6_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a6_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a6_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a6_funding">
@@ -432,9 +452,9 @@
         <tr>
           <td>A7</td>
           <td>Defluoridation units</td>
-          <td><input type="number" name="dm_a7_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a7_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a7_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a7_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a7_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a7_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a7_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a7_funding">
@@ -452,9 +472,9 @@
         <tr>
           <td>A8</td>
           <td>Community RO / purifier units</td>
-          <td><input type="number" name="dm_a8_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a8_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a8_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a8_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a8_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a8_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a8_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a8_funding">
@@ -472,9 +492,9 @@
         <tr>
           <td>A9</td>
           <td>Distribution pipeline network (km)</td>
-          <td><input type="number" name="dm_a9_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a9_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a9_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a9_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a9_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a9_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a9_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a9_funding">
@@ -492,9 +512,9 @@
         <tr>
           <td>A10</td>
           <td>Water supply to schools / AWCs / health centres</td>
-          <td><input type="number" name="dm_a10_avail" placeholder="0"></td>
-          <td><input type="number" name="dm_a10_operational" placeholder="0"></td>
-          <td><input type="number" name="dm_a10_deficit" placeholder="0"></td>
+          <td><input type="number" name="dm_a10_avail" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a10_operational" placeholder="0" readonly></td>
+          <td><input type="number" name="dm_a10_deficit" placeholder="0" readonly></td>
           <td><input type="number" name="dm_a10_cost" placeholder="0.00"></td>
           <td>
             <select class="funding-select" name="dm_a10_funding">
@@ -513,7 +533,7 @@
           </table>
         </div>
         <div class="note-box" style="margin-top:12px">
-          <strong>Note:</strong> District authorities may identify additional sector-wise points. Such works may be included under this baseline survey as undertaken by the District Mineral Foundation.
+          <strong>Note:</strong> Authorities may identify additional sector-wise points. Such works may be included under this baseline survey as undertaken by the District Mineral Foundation.
         </div>
       </div>
     </div>
@@ -535,6 +555,57 @@
   DMF Baseline Survey — Rule 13(1)A(a)
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js">
+function updateDeficitMatrix() {
+
+  // ✅ A1: Household Connections
+  let hhCount = parseFloat(document.querySelector('[name="a_i_2_count"]')?.value) || 0;
+
+  document.querySelector('[name="dm_a1_avail"]').value = hhCount;
+  document.querySelector('[name="dm_a1_operational"]').value = hhCount;
+
+  // Example deficit logic (you can improve this)
+  let totalHH = 100; // Replace dynamically if available
+  document.querySelector('[name="dm_a1_deficit"]').value = Math.max(0, totalHH - hhCount);
+
+
+  // ✅ A2: Hand Pumps
+  let hpInstalled = parseFloat(document.querySelector('[name="a_i_6_inst"]')?.value) || 0;
+  let hpOperational = parseFloat(document.querySelector('[name="a_i_6_op"]')?.value) || 0;
+
+  document.querySelector('[name="dm_a2_avail"]').value = hpInstalled;
+  document.querySelector('[name="dm_a2_operational"]').value = hpOperational;
+  document.querySelector('[name="dm_a2_deficit"]').value = hpInstalled - hpOperational;
+
+
+  // ✅ A3: Borewells
+  let bwInstalled = parseFloat(document.querySelector('[name="a_i_7_inst"]')?.value) || 0;
+  let bwOperational = parseFloat(document.querySelector('[name="a_i_7_op"]')?.value) || 0;
+
+  document.querySelector('[name="dm_a3_avail"]').value = bwInstalled;
+  document.querySelector('[name="dm_a3_operational"]').value = bwOperational;
+  document.querySelector('[name="dm_a3_deficit"]').value = bwInstalled - bwOperational;
+
+
+  // ✅ A8: RO Units
+  let roCount = parseFloat(document.querySelector('[name="a_ii_2_count"]')?.value) || 0;
+  let roStatus = document.querySelector('[name="a_ii_2_status"]')?.value;
+
+  document.querySelector('[name="dm_a8_avail"]').value = roCount;
+
+  if (roStatus === "Functional") {
+    document.querySelector('[name="dm_a8_operational"]').value = roCount;
+    document.querySelector('[name="dm_a8_deficit"]').value = 0;
+  } else if (roStatus === "Non-Functional") {
+    document.querySelector('[name="dm_a8_operational"]').value = 0;
+    document.querySelector('[name="dm_a8_deficit"]').value = roCount;
+  } else {
+    document.querySelector('[name="dm_a8_operational"]').value = Math.floor(roCount / 2);
+    document.querySelector('[name="dm_a8_deficit"]').value = roCount - Math.floor(roCount / 2);
+  }
+
+}
+
+</script>
 </body>
 </html>

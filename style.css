@@ -525,11 +525,11 @@ input[type="radio"], input[type="checkbox"] {
 .index-hero p { font-size: 15px; opacity: 0.85; max-width: 580px; margin: 0 auto; }
 
 .index-stats {
-  max-width: 900px;
+  max-width: 1200px;
   margin: -24px auto 0;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   position: relative;
   z-index: 10;

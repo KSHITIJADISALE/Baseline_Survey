@@ -99,9 +99,26 @@
         <tbody>
         <tr>
           <td class="q-num">C-I.1</td>
-          <td class="q-text">Is there any health facility (Sub-Centre/PHC/CHC/Hospital) available in or serving the village?</td>
-          <td class="q-format">Yes/No; Facility type; Distance</td>
-          <td class="q-input"><div class="radio-group"><label><input type="radio" name="c_i_1" value="Yes"> Yes</label><label><input type="radio" name="c_i_1" value="No"> No</label></div><select name="c_i_1_type" style="margin-top:4px"><option value="">-- Facility Type --</option><option>Sub-Centre</option><option>PHC</option><option>CHC</option><option>District Hospital</option><option>Other</option></select><input type="number" name="c_i_1_dist" placeholder="Distance (km)" style="margin-top:4px"></td>
+          <td class="q-text">Are there any health facilities (Sub-Centre/PHC/CHC/Hospital) available in or serving the Village?</td>
+          <td class="q-format">Yes/No; Count</td>
+          <td class="q-input"><div class="radio-group"><label><input type="radio" name="c_i_1" value="Yes"> Yes</label><label><input type="radio" name="c_i_1" value="No"> No</label><div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:6px;">
+<label>Sub-Centre</label>
+<input type="text" name="c_i_1" placeholder="Sub-Centre Count">
+<label>PHC</label>
+<input type="text" name="c_i_1" placeholder="PHC Count">
+<label>CHC</label>
+<input type="text" name="c_i_1" placeholder="CHC Count">
+<label>Village Hospitals</label>
+<input type="text" name="c_i_1" placeholder="Village Hospitals Count">
+<label>Others</label>
+<input type="text" name="kc_i_1" placeholder="Count of Others">
+</div>
+
+<div class="note-box" style="margin:14px 0; display:block; width:100%;">
+    Leave blank if not applicable.
+</div>
+
+</td>
         </tr>
         <tr>
           <td class="q-num">C-I.2</td>
@@ -111,9 +128,9 @@
         </tr>
         <tr>
           <td class="q-num">C-I.3</td>
-          <td class="q-text">Is a health sub-center or PHC building available in village assets?</td>
-          <td class="q-format">Yes/No; Details</td>
-          <td class="q-input"><div class="radio-group"><label><input type="radio" name="c_i_3" value="Yes"> Yes</label><label><input type="radio" name="c_i_3" value="No"> No</label></div><textarea name="c_i_3_details" placeholder="Details..." style="margin-top:6px"></textarea></td>
+          <td class="q-text">Does each village has a building or facility for basic healthcare services, such as a sub-center or a Primary Health Centre?</td>
+          <td class="q-format">Yes/No; Count</td>
+          <td class="q-input"><div class="radio-group"><label><input type="radio" name="c_i_3" value="Yes"> Yes</label><label><input type="radio" name="c_i_3" value="No"> No</label></div><input type="number" name="c_i_3_count" placeholder="Count of villages that don't have heath care facilites"style="margin-top:6px"></textarea></td>
         </tr>
         <tr>
           <td class="q-num">C-I.4</td>
@@ -153,9 +170,31 @@
         <tbody>
         <tr>
           <td class="q-num">C-II.1</td>
-          <td class="q-text">What major diseases are found in the village (silicosis, TB, breathing, skin/eye issues)? Case count?</td>
-          <td class="q-format">Disease type; Case count</td>
-          <td class="q-input"><textarea name="c_ii_1" placeholder="e.g. Silicosis: 15 cases, TB: 8 cases..."></textarea></td>
+          <td class="q-text">What major diseases are found in the village?</td>
+          <td class="q-format">Case count</td>
+          <td class="q-input"><div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:6px;">
+<label>Pulmonary/Asthma</label>
+<input type="text" name="c_i_1" placeholder="Pulmonary Count">
+<label>Silicosis</label>
+<input type="text" name="c_i_1" placeholder="Silicosis Count">
+<label>Skin Diseases</label>
+<input type="text" name="c_i_1" placeholder="Skin Diseases Count">
+<label>Eye Diseases</label>
+<input type="text" name="c_i_1" placeholder="Eye Diseases Count">
+<label>Diarrhea</label>
+<input type="text" name="c_i_1" placeholder="Diarrhea Cases Count">
+<label>Others</label>
+<input type="text" name="kc_i_1" placeholder="Count of Others">
+</div>
+
+<div class="note-box" style="margin:14px 0; display:block; width:100%;">
+
+<ul style="margin:0; padding-left:20px;">
+        <li>
+Pulmonary Diseases - Type of disease that affects the lungs and other parts of the respiratory system. Eg. - Asthma, Chronic Obstructive Pulmonary Disease (COPD), Pulmonary Fibrosis, Pneumonia, and Lung Cancer.</li>
+<li>Leave blank if not applicable.</li>
+</ul>
+</div></td>
         </tr>
         <tr>
           <td class="q-num">C-II.2</td>
@@ -410,7 +449,7 @@
           </table>
         </div>
         <div class="note-box" style="margin-top:12px">
-          <strong>Note:</strong> District authorities may identify additional sector-wise points. Such works may be included under this baseline survey as undertaken by the District Mineral Foundation.
+          <strong>Note:</strong> Authorities may identify additional sector-wise points. Such works may be included under this baseline survey as undertaken by the District Mineral Foundation.
         </div>
       </div>
     </div>

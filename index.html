@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DMF Comprehensive Baseline Survey — MP DMF Rules 2016</title>
+  <title>Draft- DMF Comprehensive Baseline Survey — MP DMF Rules 2016</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,8 @@
     <div class="header-titles">
       <h1>DMF Comprehensive Baseline Survey</h1>
       <p>Field Data Collection — Gap Identification for Fund Utilization | All 15 DMF-Eligible Sectors</p>
+<p style="color: red;font-weight: bold;">
+This is just a draft for visualization purpose, this is not for circulation to any authority.</p>
     </div>
     <nav class="header-nav">
       <a href="index.html" class="active">Home</a>
@@ -31,9 +33,15 @@
 <div class="index-hero">
   <h1>DMF Baseline Survey</h1>
   <p>Pradhan Mantri Khanij Kshetra Kalyan Yojana (PMKKKY) — Field Data Collection for Mining-Affected Communities of Madhya Pradesh</p>
+<p style="color: yellow;font-weight: bold;">
+  This is just a draft for visualization purpose, this is not for circulation to any authority.
+</p>
 </div>
 
 <div class="index-stats">
+
+
+
   <div class="stat-card">
     <div class="num">15</div>
     <div class="lbl">DMF-Eligible Sectors</div>
@@ -46,6 +54,36 @@
     <div class="num" style="color:#7B5E2A">4</div>
     <div class="lbl">Other Priority Sectors (≤30% Funds)</div>
   </div>
+
+<div class="stat-card">
+
+  <div class="lbl"><b>Select Area Type</b></div>
+
+  <div style="margin-top:10px;">
+    <label>
+      <input type="radio" name="areaType" value="rural"> Rural
+    </label>
+
+    <label style="margin-left:15px;">
+      <input type="radio" name="areaType" value="urban"> Urban
+    </label>
+  </div>
+
+  <div id="villageDropdown" style="display:none; margin-top:10px;">
+    <select>
+      <option>-- Select Village --</option>
+      <option>Village 1</option>
+    </select>
+  </div>
+  <div id="wardDropdown" style="display:none; margin-top:10px;">
+    <select>
+      <option>-- Select Ward --</option>
+      <option>Ward 1</option>
+    </select>
+  </div>
+
+</div>
+
 </div>
 
 <div class="index-grid" id="sectors">
@@ -204,7 +242,7 @@
   <img src="Asset/O_Black.png" alt="Icon" style="width:36px; height:48px;">
 </div>     <span class="card-code">Sector o</span>
   </div>
-  <div class="card-name">Any other measures for enhancing environmental quality in mining affected district(s).</div>
+  <div class="card-name">Any other measures for enhancing environmental quality in mining affected District(s).</div>
   <div class="card-rule">Rule 13(1)B(d)</div>
   <span class="card-badge other">Other Priority</span>
 </a>
@@ -217,6 +255,32 @@
   Directorate of Geology and Mining, Government of Madhya Pradesh, Bhopal — 462002
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js">
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const radios = document.querySelectorAll('input[name="areaType"]');
+
+  radios.forEach(function (radio) {
+    radio.addEventListener("change", function () {
+
+      const village = document.getElementById("villageDropdown");
+      const ward = document.getElementById("wardDropdown");
+
+      if (this.value === "rural") {
+        village.style.display = "block";
+        ward.style.display = "none";
+      } else if (this.value === "urban") {
+        village.style.display = "none";
+        ward.style.display = "block";
+      }
+
+    });
+  });
+
+});
+</script>
+
 </body>
 </html>
